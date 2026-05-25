@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre Nosotros | Neuro Reactiva</title>
+  <meta name="description" content="Neurorrehabilitación a domicilio en Madrid">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="Neuro Reactiva">
+      <span class="brand-mark"><img src="logo-neuro-reactiva.png" alt="Logotipo de Neuro Reactiva"></span>
+      <span><p class="brand-title">Neuro Reactiva</p><p class="brand-sub">Neurorrehabilitación a domicilio en Madrid</p></span>
+    </a>
+    <nav class="nav-links" aria-label="Navegación principal"><a class="" href="index.html">Inicio</a><a class="" href="servicios.html">Servicios</a><a class="" href="metodologia.html">Metodología</a><a class="" href="tarifas.html">Tarifas</a><a class="active" href="sobre-nosotros.html">Sobre Nosotros</a><a class="" href="contacto.html">Contacto</a><a class="nav-cta " href="solicitar-valoracion.html">Solicitar valoración</a></nav>
+  </div>
+</header>
+
+<main>
+<section class="page-hero"><div class="wrap"><span class="kicker">Sobre Nosotros</span><h1>Neuro Reactiva nace para acercar la neurorrehabilitación al lugar donde más se necesita: la vida diaria.</h1><p class="lead">Un proyecto especializado en rehabilitación neurológica a domicilio, con una atención cercana, profesional y orientada a objetivos reales.</p></div></section>
+<section class="section"><div class="wrap about-layout">
+  <div class="about-photo"><img src="olga-guerrero.jpg" alt="Olga Guerrero"><div class="about-badge">Experiencia cercana</div></div>
+  <article class="about-copy"><p class="eyebrow">Sobre mí</p><h2>Hola, soy Olga Guerrero.</h2><p><strong>Fisioterapeuta especializada en neurología · Neuro Reactiva · Colegiada nº 13194 por el Colegio Profesional de Fisioterapeutas de la Comunidad de Madrid.</strong></p><p>Mi objetivo es ayudarte a recuperar autonomía y mejorar tu calidad de vida a través de un tratamiento cercano, profesional y adaptado a lo que realmente necesitas.</p><ul class="checks"><li>Experiencia en fisioterapia neurológica.</li><li>Trabajo en unidad de ictus y pacientes neurológicos.</li><li>Docencia, investigación y actualización continua.</li><li>Formación en ecografía y técnicas de punción.</li><li>Enfoque basado en la evidencia y en la persona.</li></ul><div class="actions"><a class="btn btn-primary" href="contacto.html">Conocer más →</a></div></article>
+</div></section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><img src="logo-neuro-reactiva.png" alt="">Neuro Reactiva</div>
+        <p style="margin:12px 0 0;max-width:340px;line-height:1.6">Fisioterapia neurológica a domicilio en Madrid. Tu proceso, paso a paso.</p>
+      </div>
+      <div><h4>Enlaces rápidos</h4><a href="servicios.html">Servicios</a><a href="metodologia.html">Metodología</a><a href="tarifas.html">Tarifas</a><a href="sobre-nosotros.html">Sobre Nosotros</a></div>
+      <div><h4>Contacto</h4><a href="https://wa.me/34614817710?text=Hola%2C%20quer%C3%ADa%20solicitar%20una%20valoraci%C3%B3n%20inicial%20de%20Neuro%20Reactiva.">WhatsApp</a><a href="contacto.html">Formulario de contacto</a><a href="politica-privacidad.html">Política de privacidad</a><a href="politica-cookies.html">Política de cookies</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Neuro Reactiva. Todos los derechos reservados.</span><span>Madrid · Atención a domicilio</span></div>
+  </div>
+</footer>
+
+<script>
+function enviarValoracion(e){
+  e.preventDefault();
+  const f = e.target;
+  const nombre = encodeURIComponent(f.nombre?.value || '');
+  const telefono = encodeURIComponent(f.telefono?.value || '');
+  const zona = encodeURIComponent(f.zona?.value || '');
+  const motivo = encodeURIComponent(f.motivo?.value || '');
+  const texto = `Hola, quiero solicitar una valoración inicial.
+Nombre: ${nombre}
+Teléfono: ${telefono}
+Zona: ${zona}
+Motivo: ${motivo}`;
+  window.location.href = 'https://wa.me/34614817710?text=' + texto;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de privacidad | Neuro Reactiva</title>
+  <meta name="description" content="Neurorrehabilitación a domicilio en Madrid">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="Neuro Reactiva">
+      <span class="brand-mark"><img src="logo-neuro-reactiva.png" alt="Logotipo de Neuro Reactiva"></span>
+      <span><p class="brand-title">Neuro Reactiva</p><p class="brand-sub">Neurorrehabilitación a domicilio en Madrid</p></span>
+    </a>
+    <nav class="nav-links" aria-label="Navegación principal"><a class="" href="index.html">Inicio</a><a class="" href="servicios.html">Servicios</a><a class="" href="metodologia.html">Metodología</a><a class="" href="tarifas.html">Tarifas</a><a class="" href="sobre-nosotros.html">Sobre Nosotros</a><a class="" href="contacto.html">Contacto</a><a class="nav-cta " href="solicitar-valoracion.html">Solicitar valoración</a></nav>
+  </div>
+</header>
+
+<main>
+<section class="page-hero"><div class="wrap"><span class="kicker">Información legal</span><h1>Política de privacidad</h1></div></section>
+<section class="section"><div class="wrap legal-page"><p>Esta página es una plantilla inicial y debe revisarse con los datos fiscales y legales definitivos antes de publicar la web.</p><h2>Responsable</h2><p>Neuro Reactiva. Pendiente de completar datos identificativos, domicilio profesional y correo de contacto.</p><h2>Finalidad</h2><p>Los datos enviados a través de los formularios o WhatsApp se utilizarán para responder consultas, organizar valoraciones y gestionar la relación profesional.</p><h2>Datos de salud</h2><p>Se recomienda no incluir información clínica detallada en el primer contacto. La información sanitaria se recogerá posteriormente por canales adecuados y con las garantías correspondientes.</p><h2>Derechos</h2><p>La persona interesada puede solicitar acceso, rectificación, supresión, oposición, limitación o portabilidad de sus datos mediante los canales de contacto habilitados.</p></div></section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><img src="logo-neuro-reactiva.png" alt="">Neuro Reactiva</div>
+        <p style="margin:12px 0 0;max-width:340px;line-height:1.6">Fisioterapia neurológica a domicilio en Madrid. Tu proceso, paso a paso.</p>
+      </div>
+      <div><h4>Enlaces rápidos</h4><a href="servicios.html">Servicios</a><a href="metodologia.html">Metodología</a><a href="tarifas.html">Tarifas</a><a href="sobre-nosotros.html">Sobre Nosotros</a></div>
+      <div><h4>Contacto</h4><a href="https://wa.me/34614817710?text=Hola%2C%20quer%C3%ADa%20solicitar%20una%20valoraci%C3%B3n%20inicial%20de%20Neuro%20Reactiva.">WhatsApp</a><a href="contacto.html">Formulario de contacto</a><a href="politica-privacidad.html">Política de privacidad</a><a href="politica-cookies.html">Política de cookies</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Neuro Reactiva. Todos los derechos reservados.</span><span>Madrid · Atención a domicilio</span></div>
+  </div>
+</footer>
+
+<script>
+function enviarValoracion(e){
+  e.preventDefault();
+  const f = e.target;
+  const nombre = encodeURIComponent(f.nombre?.value || '');
+  const telefono = encodeURIComponent(f.telefono?.value || '');
+  const zona = encodeURIComponent(f.zona?.value || '');
+  const motivo = encodeURIComponent(f.motivo?.value || '');
+  const texto = `Hola, quiero solicitar una valoración inicial.
+Nombre: ${nombre}
+Teléfono: ${telefono}
+Zona: ${zona}
+Motivo: ${motivo}`;
+  window.location.href = 'https://wa.me/34614817710?text=' + texto;
+}
+</script>
+</body>
+</html>
