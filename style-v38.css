@@ -794,8 +794,6 @@ h1,h2,h3,.brand-name,.amount,.stat b,.signature,.btn{font-family:"Nunito",system
     padding:22px 16px;
   }
 }
-
-
 /* --- Parche RRSS: sustituye letras por iconos --- */
 .footer-social a{
   font-size:0 !important;
@@ -822,6 +820,27 @@ h1,h2,h3,.brand-name,.amount,.stat b,.signature,.btn{font-family:"Nunito",system
 .footer-social a {
   font-size: 0 !important;
 }
+.footer-social a svg {
+  width: 19px;
+  height: 19px;
+  display: block;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.footer-social a::before,
+.footer-social a::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+}
+
+.footer-social a {
+  font-size: 0 !important;
+}
+
 .footer-social a svg {
   width: 19px;
   height: 19px;
